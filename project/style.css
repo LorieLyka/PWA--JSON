@@ -1,0 +1,96 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+
+html{
+	font-family: 'Montserrat', sans-serif;
+}
+body {
+    padding-top: 70px; /* Adjust to the height of the fixed navbar */
+    background-color: #B7B597   ;
+    scroll-padding-top: 56px; /* Height of the navbar */
+}
+p:hover,h4:hover {
+    color: #B7B597
+}
+section {
+    padding-top: 200px; /* Height of the navbar + some margin */
+}
+.navbar {
+    background-color: #254336;
+    height: 70px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar .nav-link {
+    color: white;
+    font-weight: bolder;
+}
+.navbar .nav-link:hover {
+    color: black;
+    transition-duration: 1000ms;
+}
+
+.container:hover,
+.container .about-box:hover{
+    color: white;
+}
+.social-icons ,
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+}
+.social-icons a:hover {
+    color: #254336;
+}
+.about-box {
+    text-align: center;
+}
+#scrollBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    background-color: black;
+    color: #6B8A7A;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    padding: 15px;
+	height:50px;
+
+}
+
+@media only screen and (min-width: 768px) {
+    #scrollBtn {
+        display: block;
+    }
+}
+
+.about-box {
+    border: 1px solid #ccc; /* Border color */
+    padding: 20px; /* Padding inside the box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+	background-color: #E1CAC5;
+}
+.social-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #333;
+    margin: 0 10px;
+    font-size: 24px;
+}
